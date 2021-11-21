@@ -1,0 +1,80 @@
+package animalHeranca;
+import java.util.Scanner;
+
+
+public class TesteAnimal 
+{
+
+	  String nome,idade,acao,som;
+	  int x=0;
+		
+		Scanner leia = new Scanner (System.in);
+		
+		cachorro Cachorro= new cachorro ();
+		cavalo Cavalo= new cavalo ();
+	    preguica Preguica = new preguica ();
+	    
+	 
+	    do
+	    {
+	    	System.out.println("\nQual deses é o seu animal?\n\n(1) Cachorro \n\n(2) Cavalo \n\n(3)Preguiça");
+	    	
+	    	x = leia.nextInt();
+	    	if(x==1)
+	    	{
+	    		
+	    		System.out.println("\nQual é o nome do seu Cachorro: ");
+	    		nome = leia.next();
+	    		System.out.println("\nQual é a idade dele: ");
+	    		idade = leia.next();
+	    	    System.out.println("\nQual é o som que ele emite: ");
+	    	    som = leia.next();
+	    	    System.out.println("\nQual é o tipo de ação que ele faz: ");
+	    	    acao = leia.next();
+	    	    
+	    	    System.out.println("********************************************");
+	    	    System.out.println("\nAnimal Cachorro nome: " +nome+ "tem : "+idade+" ano(s)  "
+	    	    		+ "emite o som: "+som+" e a ação dele é: "+acao);
+	    	}
+	    	else if(x==2)
+	    	{
+	    		
+	    		System.out.println("\nQual é o nome do seu Cavalo: ");
+	    		nome = leia.next();
+	    		System.out.println("\nQual é a idade dele: ");
+	    		idade = leia.next();
+	    	    System.out.println("\nQual é o som que ele emite: ");
+	    	    som = leia.next();
+	    	    System.out.println("\nQual é o tipo de ação que ele faz: ");
+	    	    acao = leia.next();
+	    	    
+	    	    System.out.println("********************************************");
+	    	    System.out.println("\nAnimal Cavalo nome: " +nome+ "tem : "+idade+" ano(s)  "
+	    	    		+ "emite o som: "+som+" e a ação dele é: "+acao);
+	    	}
+	    	else if (x==3)
+	    	{
+	    		
+	    	    System.out.println("\nQual é o nome da sua Preguiça: ");
+	    	    nome = leia.next();
+	    	    System.out.println("\nQual é a idade dela: ");
+	    	    idade = leia.next();
+	    	    System.out.println("\nQual é o som que ela emite: ");
+	    	    som = leia.next();
+	    	    System.out.println("\nQual é o tipo de ação que ela faz: ");
+	    	    acao = leia.next();
+	    	    	    
+	    	    System.out.println("********************************************");
+	    	    System.out.println("\nAnimal Preguiça nome: " +nome+ "tem : "+idade+" ano(s)  "
+	    	    		+ "emite o som: "+som+" e a ação dela é: "+acao);
+	    	    		
+	    	}
+	    	else
+	    	{
+	    		System.out.println("\nOpção Inválida, digite novamente");
+	    		
+	    	}
+	    	while (x<=0 || x>=4);
+	    }
+	    
+}
