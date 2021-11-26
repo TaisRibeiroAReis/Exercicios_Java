@@ -1,0 +1,26 @@
+package colection;
+import java.util.Scanner;
+
+public class dataniver {
+	
+	public static void main(String[] args) {
+		
+			int dataNascimento, mes, ano, idade, dias, diasAno=365, anoAtual=2021;
+			
+			Scanner leia = new Scanner (System.in);
+			
+			System.out.println("\n Qual é a data que você nasceu: ");
+			dataNascimento= leia.nextInt();
+			System.out.println("\n Qual é o seu mês de nascimento: ");
+			mes= leia.nextInt();
+			System.out.println("\n Em qual ano você nasceu: ");
+			ano= leia.nextInt();
+			
+			idade = (anoAtual -  ano);
+			
+			System.out.println("\n Sua idade é: "+idade+ " ano(s)");
+			dias = (dataNascimento * diasAno);
+			System.out.println("\n Seus dias aqui na terra são: "+dias+ " dia(s)");
+		}
+	}
+
